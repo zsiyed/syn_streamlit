@@ -177,7 +177,7 @@ st.set_page_config(layout='wide')
 start_app()
 
 #multipage object
-app = MultiPage()
+app = multipage.MultiPage()
 app.start_button = "Let's explore this!"
 # app.navbar_name = "Table of Contents"
 # app.next_page_button = "Next Question"
