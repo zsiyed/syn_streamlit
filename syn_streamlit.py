@@ -168,20 +168,7 @@ class MultiPage:
 				self.__apps[pag].func(prev_vars)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-------------------------------------------
+#start of app code
 
 #wide layout
 st.set_page_config(layout='wide')
@@ -199,12 +186,10 @@ app.start_button = "Let's explore this!"
 
 # intro page function to start
 def intropage():
-    # ** insert generic climate change image for aesthetic reasons (you find image and send it to me, ill upload it)
 	st.header("Welcome to our climate change chatbot, we hope this chat bot shows you new perspectives and information on the topic of global warming.")
 # 	st.markdown("# Lets dive in!")
 
 def homepage(prevpage):
-    # ** insert generic climate change image for aesthetic reasons (you find image and send it to me, ill upload it)
     st.header("Here we have an interactive slider to help us understand your background as it applies to climate change.")
     knowledge_lvl = st.slider("How educated do you feel you are about climate change on a scale of 1-10", min_value=1, max_value=10, value = 0)
     if knowledge_lvl > 0 and knowledge_lvl > 5:
